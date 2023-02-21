@@ -1,0 +1,50 @@
+// BGIFirstTest.c : Example graphic application
+
+
+#include <graphics.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+void main(void)
+{
+		int x = 20, y = 20; // declare and initialise variables to default values
+		int c = 0; // for input from keyboard
+
+		// initialise graphics and variables
+		int gd = DETECT, gm = 0;
+		initgraph(&gd, &gm, "");
+
+		do {
+			clearviewport();
+
+			// draw circle in current position
+			circle(x, y, 20);
+			// update position of circle of a fixed offset
+			x += 2; // try different values for the offset, e.g. x+=5 or x+=10
+
+			delay(50); // wait 50 ms , try different values for this delay
+
+			if (_kbhit()) { // see http://www.programmingsimplified.com/c/conio.h/kbhit
+				c = _getch();
+
+				switch (c) {
+					case KEY_LEFT
+					:	printf("%d", x);
+						x -= 3;
+						break;
+
+					case KEY_RIGHT
+					:	printf("%d", x);
+						x += 3;
+						break;
+
+					case KEY_UP
+					:	printf("%d", y);
+						y += 3;
+					
+				}
+			}
+
+		} while (c != KEY_ESCAPE);
+}

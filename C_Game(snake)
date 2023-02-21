@@ -1,0 +1,70 @@
+#include <graphics.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+#include <conio.h>
+
+#define true 1
+#define false 0
+#define leftArrow 0
+#define rightArrow 1
+#define upArrow 2
+#define downArrow 3
+
+int arrowKeyPressed(void);
+
+int x = 100;
+int y = 100;
+int i = 0;
+
+void main() {
+
+	int gd = DETECT, gm = 0;
+	initgraph(&gd, &gm, "");
+	printf("Hello World\n");
+
+	do {
+		delay(50);
+
+		if (arrowKeyPressed() == leftArrow) {
+			x -= 20;
+			printf("left");
+		}
+		else if (arrowKeyPressed() == rightArrow) {
+			x += 20;
+			printf("right");
+		}
+		else if (arrowKeyPressed() == upArrow) {
+			y -= 20;
+			printf("up");
+		}
+		else if (arrowKeyPressed() == downArrow) {
+			y += 20;
+			printf("down");
+		}
+		circle(x, y, 10);
+	} while (true);
+}
+
+int arrowKeyPressed(void) {
+	int c = 0;
+
+	while (true) {
+		if (_kbhit()) {
+			c = _getch();
+
+			switch (c) {
+
+			case KEY_LEFT:
+				return leftArrow;
+			case KEY_RIGHT:
+				return rightArrow;
+			case KEY_UP:
+				return upArrow;
+			case KEY_DOWN:
+				return downArrow;
+			}
+		}
+	}
+}

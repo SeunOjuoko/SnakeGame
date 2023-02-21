@@ -1,0 +1,27 @@
+// BGIFirstTest.c : Example graphic application
+//
+
+
+#include <graphics.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void main(void)
+{
+	// Initialise graphic window
+	int gd = DETECT, gm = 0;
+	initgraph(&gd, &gm, "");
+	printf("Hello, world\n");
+
+	// example of use of graphic primitives
+	line(280, 250, 428, 82);
+	arc(300, 250, 200, 425, 200);
+	
+
+	// wait for key pressed
+	readkey();
+
+	// close graphic
+	closegraph();
+}

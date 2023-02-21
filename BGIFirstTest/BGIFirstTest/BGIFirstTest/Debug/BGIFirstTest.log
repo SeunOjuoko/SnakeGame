@@ -1,0 +1,24 @@
+﻿  BGIFirstTest.c
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(44): warning C4013: 'gets' undefined; assuming extern returning int
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(46): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(81): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(81): warning C4047: 'function': 'int *' differs in levels of indirection from 'int'
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(81): warning C4024: 'Snake': different types for formal and actual parameter 3
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(85): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(85): error C2109: subscript requires array or pointer type
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(87): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(87): error C2109: subscript requires array or pointer type
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(95): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(96): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(125): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(125): error C2109: subscript requires array or pointer type
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(129): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(129): error C2109: subscript requires array or pointer type
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(131): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(131): error C2109: subscript requires array or pointer type
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(139): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(139): error C2109: subscript requires array or pointer type
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(142): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(142): error C2109: subscript requires array or pointer type
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(147): error C2065: 'bodyY': undeclared identifier
+h:\c game\bgifirsttest(2)\bgifirsttest\bgifirsttest\bgifirsttest.c(147): error C2109: subscript requires array or pointer type
